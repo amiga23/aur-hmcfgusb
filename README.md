@@ -3,7 +3,7 @@
 <p>Cloned from https://aur.archlinux.org/hmcfgusb</p>
 
 Changes:
-- Copy udev rules
+- Install udev rules
 - Updated parameters
 - Do not run as daemon to get errors logged into journal
 - Run as user "fhem"
