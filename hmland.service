@@ -3,9 +3,10 @@ Description=hmland
 After=syslog.target network.target 
 
 [Service]
-Type=forking
+#Type=forking
 WorkingDirectory=/opt/hmcfgusb
-ExecStart=/opt/hmcfgusb/hmland -d -P -l 127.0.0.1 -p 1234
+ExecStart=/opt/hmcfgusb/hmland -p 1234
+User=fhem
 
 [Install]
 WantedBy=multi-user.target
